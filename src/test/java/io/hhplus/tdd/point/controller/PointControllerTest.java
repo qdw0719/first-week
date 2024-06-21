@@ -82,7 +82,8 @@ public class PointControllerTest {
                 new PointHistory(2L, 1L, 100L, TransactionType.CHARGE, System.currentTimeMillis()),
                 new PointHistory(3L, 1L, 100L, TransactionType.USE, System.currentTimeMillis()),
                 new PointHistory(4L, 1L, 100L, TransactionType.USE, System.currentTimeMillis()),
-                new PointHistory(5L, 1L, 100L, TransactionType.CHARGE, System.currentTimeMillis()));
+                new PointHistory(5L, 1L, 100L, TransactionType.CHARGE, System.currentTimeMillis())
+        );
 
         // 서비스의 getPointHistories 메서드를 모킹하여 pointHistories를 반환하도록 설정
         when(pointService.getPointHistories(anyLong())).thenReturn(pointHistories);

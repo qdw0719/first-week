@@ -21,11 +21,6 @@ public class UserPointRepositoryImpl implements UserPointRepository {
     }
 
     @Override
-    public UserPoint insertOrUpdate(Long id, Long amount) {
-        return null;
-    }
-
-    @Override
     public UserPoint insertOrUpdate(long id, long amount) {
         return userPointTable.insertOrUpdate(id, amount);
     }
